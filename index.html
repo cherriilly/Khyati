@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Ephesis&family=Lexend+Deca:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montez&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+        /* 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E 
+    
+    yellow #FFFECB
+    green #C9E9D2
+    #FEF9F2 white
+    #FFE3E3 pink
+    blue #789DBC
+    */
+    .page{
+        display: grid;
+        grid-template-columns: repeat(5 , 19%);
+        grid-template-rows: repeat(5, 19%);
+        gap: 1%;
+        height: 100vh;
+    }
+
+    .box1{
+        border-radius: 10px;
+        border:3px solid #232629;
+        box-shadow: #565757 3px 3px;
+        font-family: "Lexend Deca", sans-serif;
+        padding: 10px;
+    }
+    
+    .one{
+        grid-row: span 2;
+        grid-column: span 2;
+        background-color: #FFFECB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #286ca4;
+        font-size: x-large;
+        font-weight: bolder;
+        gap: 30px;
+    }
+
+    .one img{
+        border-radius: 10px;
+        height: 200px;
+    }
+
+    .two{
+        background-color: #FEF9F2;
+        grid-column: span 3;
+        grid-row: span 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #286ca4;
+        font-size: x-large;
+        font-weight: bolder;
+        padding: 10px;
+    }
+
+    .three{
+        background-color: #FEF9F2;
+        grid-row: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .four{
+        background-color: #FFE3E3;
+        grid-row: span 2;
+        color: #286ca4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .six{
+        background-color: #C9E9D2;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .daisy-img-2{
+        height: 120px;
+        }
+
+    .eight{
+        background-color: #C9E9D2;
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-img{
+        height: 260px;
+        margin-bottom: 0%;
+        border-radius: 10px;
+    }
+
+    #daisy-height{
+        height: 170px;
+        width: 170px;
+        border-radius: 10px;
+        
+    }
+
+
+    .nine{
+        background-color: #FFFECB;
+        display: flex;
+        flex-wrap: wrap;
+        grid-row: span 2;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    
+
+    a{
+        color: #286ca4;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    
+    .ten{
+        background-color: #789DBC;
+        grid-column: span 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FEF9F2;
+        font-size: large;
+        font-weight: bolder;
+    }
+
+    .eleven{
+        background-color: #FEF9F2;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #286ca4;
+    }
+
+    @media (max-width: 1050px){
+        .page{
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    .one img{
+        height: 100px;
+    }
+
+    .one{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .a-img{
+        height: 200px;
+        width: 220px;
+        margin-bottom: 0%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #daisy-height{
+        height: 170px;
+        width: 170px;
+        border-radius: 10px;
+        margin: 10px;
+        
+    }
+
+    .daisy-img-2{
+        height: 80px;
+        }
+
+    }
+
+
+
+</style>
+<body>
+
+    <div class="page">
+        <div class="one box1">
+            <img src="./Photography.png" alt="Photo of a ceiling">
+            <a href="https://www.instagram.com/crazylazyperspective/">Photography</a>
+        </div>
+        <div class="two box1">
+           <a href="./Projects.html"> <p>Projects </br> [Web-Development | Research | Content-Creation | Challenges]</p></a>
+        </div>
+        <div class="three box1"><img id="daisy-height" src="./nature.png" alt="daisy flower"></div>
+        <div class="four box1">
+            <h3>A curious soul with a love for marketing, web-development, photography, crafts,  and constant learning.</h3>
+        </div>
+        <div class="six box1">
+            <img class="daisy-img-2" src="./daisy-img-2.png" alt="daisy-image">
+        </div>
+        <div class="eight box1"><img class="a-img" src="./web developer image.png" alt="girl working on a computer"></div>
+        <div class="nine box1">
+            
+            <h3><a href="https://www.linkedin.com/in/khyatig/">LinkedIn </a></h3>
+            <h3><a href="https://github.com/cherriilly"> GitHub </a></h3>
+            <h3><a href="https://www.youtube.com/@cherriilly">Youtube</a></h3>
+           
+        </div>
+        <div class="ten box1">
+            <h2>Connect with Me</h2>
+        </div>
+        <div class="eleven box1">
+            <h1>Hi, I'm Khyati</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
